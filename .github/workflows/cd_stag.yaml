@@ -3,16 +3,11 @@ on:
     branches:
       - release/*
 env:
-  SERVICE: emd-desafio-devops-caio-staging # TODO: update Cloud Run service name
-  REGION: us-central1-c # TODO: update Cloud Run service region
+  SERVICE: emd-desafio-devops-caio-staging
+  REGION: us-central1-c
 
 jobs:
   deploy:
-    # Add 'id-token' with the intended permissions for workload identity federation
-    permissions:
-      contents: "read"
-      id-token: "write"
-
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
