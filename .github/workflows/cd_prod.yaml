@@ -8,7 +8,7 @@ on:
 env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
   SERVICE: emd-desafio-devops-caio
-  REGION: us-central1-c
+  REGION: us-central1
 
 jobs:
   deploy:
